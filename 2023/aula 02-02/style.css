@@ -1,0 +1,36 @@
+*{
+    font-family: arial, helvetica;
+    margin: 0px;
+}
+
+#painel-usuario{
+    display: flex;
+}
+
+h2, h3{
+    margin-top: 20px;
+    color: green;
+}
+
+#dados-pessoais{
+    margin-left: 15px;
+    padding-bottom: 15px;
+    color: gray;
+}
+
+p{
+    padding-left: 10px;
+}
+
+#imagem-perfil{
+    display: flex;
+    align-items: flex-start;
+    padding-top: 50px;
+    margin-right: 20px;
+}
+  
+#link-contato, ul{
+    color: black;
+    margin: 20px 15px 0px;
+    padding: 0px;
+}
