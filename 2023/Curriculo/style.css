@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: azure;
+    font-family: 'PT Sans Narrow', 'Nanum Gothic', sans-serif;
+}
+
+#foto{
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 20px black;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#barra_lateral{
+    width: 100px;
+    height: 100vw;
+    background-color:coral;
+    float: left;
+}
+
+li{
+    margin: 5px;
+    padding: 15px 10px;
+}
+
+#nome{
+    background-color: blueviolet;
+}
+
+#contato{
+    background-color: yellowgreen;
+}
+
+#experiencia{
+    background-color: turquoise;
+}
+
+#formacao{
+    background-color: teal;
+}
+
+#competencias{
+    background-color: springgreen;
+}
+
+#habilidades{
+    background-color:slateblue;
+}
