@@ -13,6 +13,7 @@ body{
 }
 
 #foto{
+    margin: 25px;
     width: 150px;
     border-radius: 50%;
     box-shadow: 2px 2px 20px black;
@@ -26,37 +27,51 @@ body{
 }
 
 #barra_lateral{
+    padding-right: 10px;
+    margin-right: 10px;
     width: 100px;
     height: 100vw;
-    /* background-color:coral; */
     float: left;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 }
 
-li{
+#barra_lateral ul{
+    position: fixed;
+}
+
+.link_nav, .link_nav_topo{
+    width: 90%;
     margin: 5px;
     padding: 15px 10px;
+    background-color: azure;1
 }
 
-#nome{
-    /* background-color: blueviolet; */
+.link_nav_topo{
+    position: relative;
+    bottom: 0px;
+    top: 42vw;
+}
+/* #nome{
+    background-color: blueviolet;
 }
 
 #contato{
-    /* background-color: yellowgreen; */
+    background-color: yellowgreen;
 }
 
 #experiencia{
-    /* background-color: turquoise; */
+    background-color: turquoise;
 }
 
 #formacao{
-    /* background-color: teal; */
+    background-color: teal;
 }
 
 #competencias{
-    /* background-color: springgreen; */
+    background-color: springgreen;
 }
 
 #habilidades{
-    /* background-color:slateblue; */
-}
+    background-color:slateblue;
+} */
