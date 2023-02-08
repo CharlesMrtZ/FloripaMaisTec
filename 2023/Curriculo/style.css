@@ -26,7 +26,7 @@ body{
 #barra_lateral{
     width: 100px;
     height: 100vw;
-    background-color:coral;
+    /* background-color:coral; */
     float: left;
 }
 
@@ -36,25 +36,25 @@ li{
 }
 
 #nome{
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 }
 
 #contato{
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
 }
 
 #experiencia{
-    background-color: turquoise;
+    /* background-color: turquoise; */
 }
 
 #formacao{
-    background-color: teal;
+    /* background-color: teal; */
 }
 
 #competencias{
-    background-color: springgreen;
+    /* background-color: springgreen; */
 }
 
 #habilidades{
-    background-color:slateblue;
+    /* background-color:slateblue; */
 }
