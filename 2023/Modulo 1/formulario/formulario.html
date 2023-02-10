@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário exercício 6</title>
+  </head>
+  <body>
+    <!-- Crie um formulário e adicione todos tipos de inputs que você aprendeu durantes as aulas, principalmente os checkboxes, radio-buttons e opções para escolher cores ou selecionar um arquivo. Seja criativo para adicionar à labels para cada um deles. (Estilização opcional) -->
+    <h1>Exercício 6 - Criação de formulários</h1>
+
+    <p>
+      Neste exercício serão demonstrados os diversos e mais comumente utilizados tipos de formulários que o HTML permite incluir.
+    </p>
+    <p>
+      Inicialmente, cabe dizer que formulários são formas de interação entre o usuário e o sistema que ele está utilizando.
+    </p>
+
+    <h3>Input</h3>
+    <p>Um exemplo básico de formulario é um input de inserção de texto:</p>
+    <input
+      type="text" maxlength="50" size="60" placeholder="Este espaço tem um tamanho pré-definido e cabe apenas 50 caracteres" />
+    <p>
+      É possível acrescentar atributos para limitar ou facilitar a compreenção do usuário, como no campo acima, por exemplo, foram utilizados atributos para determinar o tamanho máximo do campo e a quantidade de caracteres que é permitido, também foi acrescentado um placeholder com essas informações para facilitar a compreenção
+    </p>
+
+    <h3>Reset e Submit</h3>
+    <p>
+      É comum que hajam botões para resetar o conteúdo do campo de texto ou um botão de confirmação:
+    </p>
+    <input type="reset" />
+    <input type="submit" />
+
+    <h3>Form</h3>
+    <p>
+        Porém, é importante salientar que o campo de texto deve estar dentro de uma tag &lt;form&gt; juntamente dos botões de reset e confirmar para que interajam entre si, como no exemplo a seguir:
+    </p>
+    <form>
+        <input type="text"  maxlength="20" size="50" placeholder="Digite algo e experimente algum dos botões abaixo"/><br>
+        <input type="reset" value= "Limpar texto" />
+        <input type="submit" value="Confirmar" />
+    </form>
+    <p>
+      Outra maneira do usuário interagir é através de campos de seleção, veremos aqui os inputs de checkbox e radio, respectivamente:
+    </p>
+
+    <fieldset>
+        <legend>Checkbox</legend>
+        <p>
+            <input type="checkbox" name="selecao1" id="selecao1" />
+            <label for="selecao1">Você pode me selecionar.</label>
+        </p>
+        <p>
+            <input type="checkbox" name="selecao2" id="selecao2" />
+            <label for="selecao2">Você pode me selecionar também.</label>
+        </p>
+        <p>
+            <input type="checkbox" name="selecao3" id="selecao3" />
+            <label for="selecao3">Você pode até mesmo selecionar todos nós juntos!</label>
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Radio-buttons</legend>
+        <p>
+            <input type="radio" name="opcao" id="opcao1" />
+            <label for="opcao1">Agora você deve escolher!</label>
+        </p>
+        <p>
+            <input type="radio" name="opcao" id="opcao2" />
+            <label for="opcao2">Será eu ou apenas um dos meus colegas aqui.</label>
+        </p>
+        <p>
+            <input type="radio" name="opcao" id="opcao3" />
+            <label for="opcao3">Marcando um, o outro será desselecionado</label>
+        </p>
+    </fieldset>
+    <h3>File</h3>
+    <p>
+        Outro formulário muito utilizado é para incluir arquivos utilizando o atributo &lt;file&gt;:
+    </p>
+    <label for="arquivo">Escolha um arquivo de seu computador</label>
+    <input type="file" id="arquivo" name="arquivo">
+
+    <h3>Color</h3>
+    <p>
+        Este formulário é um ótimo exemplo de como o usuário pode interagir com a página, selecione abaixo as cores da fonte e do fundo da maneira que desejar:
+    </p>
+    <div>
+        <input type="color" id="fundo" name="fundo" value="#FFFFFF" onchange="alterarFundo()">
+        <label for="fundo">Mudar cor de fundo.</label>
+    </div> <br>
+    <div>
+        <input type="color" id="fonte" name="fonte" value="#000000" onchange="alterarFonte()">
+        <label for="fonte">Mudar cor da fonte.</label>
+    </div>
+    <script>
+        corDeFundo = document.getElementById("fundo");
+        corDaFonte = document.getElementById("fonte");
+
+        function alterarFundo() {
+            document.body.style.backgroundColor = corDeFundo.value;
+        }
+        function alterarFonte() {
+            document.body.style.color = corDaFonte.value;
+        }
+    </script>
+  </body>
+</html>
