@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#formNewMovie{
+    font-size: 22px;
+    margin: 5px 5px 20px 5px ;
+    padding: 15px;
+    background-color: rgb(255, 194, 27);
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+}
+
+#new-movie-title{
+    width: 400px !important;
+}
+
+#formNewMovie input{
+    margin: 5px;
+    border-radius: 5px;
+    height: 40px;
+    border: none;
+    background-color: rgb(247, 247, 247);
+    width: 200px;
+}
+
+#formNewMovie button{
+    padding: 5px;
+    border-radius: 5px;
+    height: 40px;
+    background-color: black;
+    color: rgb(247, 247, 247);
+}
+
+#titulo{
+    /* background-color: coral; */
+    width: auto;
+    height: 75px;
+    margin: 5px 5px 0px 5px ;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#titulo h1{
+    display: inline;
+    margin-right: 25px;
+}
+
+#searchDiv{
+    /* background-color: darkgoldenrod; */
+    margin: 0px 5px 30px 5px ;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#searchDiv input{
+    width: 100%;
+    margin: 5px;
+    border-radius: 5px;
+    height: 40px;
+    border: none;
+    background-color: rgb(247, 247, 247);
+    font-size: 22px;
+    padding: 15px;
+}
+
+#searchResult{
+    font-size: 25px;
+    color: black;
+}
+
+#movieList{
+    /* background-color: burlywood; */
+    margin: 5px 5px 20px 5px ;
+    padding: 15px;
+    max-width: 900px;
+    color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+.movieItem{
+    background-color: rgb(136, 199, 241);
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 300px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.movieItem img{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.divCard{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    background-color: rgb(42, 122, 243);
+    border-radius: 5px;
+}
+
+.divCard h3, p{
+    margin: 10px 2px 15px 5px;
+    text-align:end;
+}
+
+.divIcons{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2px;
+}
+.divIconWatched, .divIconFavorite{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 60px;
+    margin: 15px;
+    background-color: rgb(221, 255, 255);
+    border-radius: 5px;
+}

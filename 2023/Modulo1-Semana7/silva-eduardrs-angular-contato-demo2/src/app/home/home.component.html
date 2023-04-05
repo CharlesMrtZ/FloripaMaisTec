@@ -1,0 +1,22 @@
+<div class="home">
+
+  <app-card
+  [tituloCard]="'Ver produtos'"
+  [icone]="'playlist_add'"
+  (cardSelecionado)="clickCard($event)"
+  
+  ></app-card>
+
+  <app-card
+  [tituloCard]="'Entre em contato'"
+  [icone]="'connect_without_contact'"
+  [routerLink]="['detalhe-produto', 'id']"
+  ></app-card>
+
+  <app-card
+  [tituloCard]="'Sobre nós'"
+  [icone]="'assignment_ind'"
+  (cardSelecionado)="clickCard($event)"
+  ></app-card>
+  
+</div>

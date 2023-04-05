@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Filmes</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <section id="formNewMovie">
+        <h1>Adicionar filme</h1>
+        <label>
+            <input 
+            type="text" 
+            id="new-movie-title" 
+            placeholder="Digite o Titulo do filme:"
+            > 
+        </label>
+
+        <label>
+            <input 
+            type="number" 
+            min="0" step="1" 
+            id="new-movie-duration" 
+            placeholder="Duração (em minutos):">
+        </label>
+
+        <label>
+            <input 
+            type="number" 
+            min="0" max="10" 
+            id="new-movie-grade" 
+            placeholder="Dê uma nota:">
+        </label>
+
+        <button 
+        type="button" id="btn-new-movie-entry"
+        >
+        Cadastrar
+        </button>
+    </section>
+
+    <div id="titulo">    
+        <h1>Filmes</h1>
+        <span id="tempoAssistido"></span>
+    </div>
+
+    <div id="searchDiv">
+        <label for="">
+            <input type="text" name="search" id="search" placeholder="pesquisar...">
+        </label>
+    </div>
+
+    <div id="searchResult"></div>
+
+    <section id="movieList">
+        <!-- <div> 
+            <figure class="movieItem">
+                <img src="https://source.unsplash.com/random/250x200" alt="filme x">
+            </figure>
+                <h3>Filme x</h3> 
+                <p>duração do filme: 0 minutos</p>
+                <p>nota 5</p>
+            <img id="watched" src="./assests/watched-no.svg" alt=""></img>
+            <img id="favorite" src="./assests/favorite_no.svg" alt=""></img>
+        </div> -->
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>

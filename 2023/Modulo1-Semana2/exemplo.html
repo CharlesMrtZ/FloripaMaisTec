@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo</title>
+    <style>
+        #modosTela button{
+            width: 65px;
+            height: 65px;
+            border-radius: 50px;
+        }
+
+        #modoClaro{
+            background-color: #f7a31d;
+            color: #ffffff;
+            display: none;
+        }
+
+        #modoEscuro{
+            background-color: rgb(49, 49, 49);
+            color: #c27b08;
+        }
+        #container{
+            display: grid;
+            grid-template-columns: 50px 50px 50px;
+            grid-template-rows: 50px 50px 50px 50px;
+            grid-gap: 5px;
+        }
+    </style>
+</head>
+<body>
+<div id="modosTela">
+    <button id="modoClaro" type="submit"> modo claro</button>
+    <button id="modoEscuro" type="submit"> modo escuro</button>
+</div>
+    
+<!-- <div id="calculator">
+    <h1>calculadora</h1>
+    <div id="visor">
+        <input id="operador1" type="number">
+        <input id="operacao" type="text">
+        <input id="operador2" type="number">
+        =
+        <input id="resultado"type="number">
+    </div>
+    <div id="container">
+        <button type="number" name="numero1" id="valor1">1</button>
+        <button type="number" name="numero2" id="valor2">2</button>
+        <button type="number" name="numero3" id="valor3">3</button>
+        <button type="number" name="numero4" id="valor4">4</button>
+        <button type="number" name="numero5" id="valor5">5</button>
+        <button type="number" name="numero6" id="valor6">6</button>
+        <button type="number" name="numero7" id="valor7">7</button>
+        <button type="number" name="numero8" id="valor8">8</button>
+        <button type="number" name="numero9" id="valor9">9</button>
+        <button type="number" name="numero0" id="valor0">0</button>
+    </div>
+    <br>
+    <button onclick="somar()">somar</button>
+    
+    <div class="resultado">
+        <span>Resultado</span>
+    </div>
+</div> -->
+
+<br><br>
+<div id="exercicioLocalStorage">
+    <div id="display"></div>
+
+    <input type="text" name="texto" id="texto" size="100" placeholder="Digite uma mensagem para salvar no local storage">
+    <br><br>
+    <button id="btn-addMsg">Adicionar</button>
+    <button id="btn-SaveMsg">Salvar mensagem</button>
+    <button id="btn-showMsg">Mostrar mensagem</button>
+</div>
+
+<div>
+    <h1><span id="valor"></span></h1>
+    <button id="btn-incrementar">iniciar</button>
+</div>
+
+    
+    <script src="./exemplo.js" type="module"></script>
+</body>
+</html>

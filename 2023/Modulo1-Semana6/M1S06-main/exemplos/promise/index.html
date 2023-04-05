@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="../../styles/header.css" />
+    <title>Promises</title>
+  </head>
+  <body>
+    <header>
+      <a href="/index.html" id="page-link" class="go-back">
+        <img src="/images/arrow-left.svg" alt="Voltar" /> Voltar</a
+      >
+
+      <div>
+        <h3>Promises</h3>
+        <p>Módulo 1 - Semana 6: Aula 1</p>
+      </div>
+    </header>
+    <div class="page-wrapper">
+      <h3 class="section-title">Exercícios com Promises próprias</h3>
+      <button id="exercice-button" onclick="successPromise()">
+        Promise com sucesso
+      </button>
+      <button id="exercice-button" onclick="delayPromise()">
+        Promise com delay
+      </button>
+      <button id="exercice-button" onclick="promiseAll()">Promise all</button>
+      <button id="exercice-button" onclick="promiseRace()">Promise race</button>
+
+      <div id="advanced-examples">
+        <h3 class="section-title">Exercícios com Fetch</h3>
+        <button id="exercice-button" onclick="getCep()">
+          Mostrar dados do CEP
+        </button>
+        <button id="exercice-button" onclick="getBanksInBrasil()">
+          Criar lista de bancos
+        </button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

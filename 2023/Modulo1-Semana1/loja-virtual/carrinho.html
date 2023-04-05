@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loja Qualquer - carrinho</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <figure>
+          <a href="./index.html">
+              <img id="logo" src="./assets/Loja Qualquer.png" alt="logo da loja" />
+          </a>
+      </figure>
+    </header>
+    <div id="produtos_carrinho">
+        <ul>
+            <li>
+            <img src="./assets/ovos-duzia.jpg" alt="uma dúzia de ovos" />
+            <h2>Uma dúzia de ovos</h2>
+            <p>
+                Uma dúzia de ovos para vários dias, mercado toda semana nunca mais!
+            </p>
+            <p class="preco">
+                R$ 10.00
+            </p>
+                <input id="qtdItem" type="number" name="qtdItens" id="qtdItens" value="1">
+                <input id="rmvItem" type="button" value="Remover do carrinho" />
+            </li>
+            <li>
+            <img src="./assets/galinha-poedeira+ovo.jpg"
+                alt="uma galinha e um ovo"
+            />
+            <h2>Galinha poedeira e um ovo</h2>
+            <p>
+                Cansado de ir ao mercado comprar seus ovos, compre uma galinha
+                poedeira e tenha seus ovos sempre que ela quiser.
+            </p>
+            <p class="preco">
+                R$ 79.00
+            </p>
+            <input id="qtdItem" type="number" name="qtdItens" id="qtdItens" value="1">
+            <input id="rmvItem" type="button" value="Remover do carrinho" />
+            </li>
+        </ul>
+        <div id="finalizarPedido">
+            <div id="campoFinalizarPedido">
+                <div>
+                    <h2>Finalizar pedido</h2>
+                    <p>
+                        Valor total da compra:
+                    </p>
+                    <p class="preco">
+                        <b>
+                            R$ 6.89 (Produto em falta)
+                        </b>
+                    </p>
+                    <button id="confirmarPedido">Confirmar Pedido</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
