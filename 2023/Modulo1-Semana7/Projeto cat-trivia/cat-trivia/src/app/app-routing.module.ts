@@ -18,6 +18,10 @@ const routes: Routes = [
   {
     path: 'sem-acesso',
     component: SemAcessoComponent
+  },
+  {
+    path: '**',
+    component: HomeComponent
   }
 ];
 

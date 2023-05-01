@@ -1,1 +1,7 @@
-<p>sem-acesso works!</p>
+<button class="btn btn-primary" (click)=dialogOpen(dialog)>Abrir</button>
+
+<dialog #dialog id="dialog">
+    <button id="closeDialog" (click)="dialogClose(dialog)">Fechar</button>
+    <p>{{ slip?.advice }}</p>
+    <img *ngIf="true" src="https://cataas.com/cat/gif" alt="cat" width="250px">
+</dialog>
