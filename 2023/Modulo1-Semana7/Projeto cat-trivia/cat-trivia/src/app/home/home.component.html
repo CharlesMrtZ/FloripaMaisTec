@@ -1,1 +1,23 @@
-<p>home</p>
+<h4>What about some facts about cats?</h4>
+<div>
+  <div class="container mb-5" *ngFor="let fact of catFacts">
+    <div class="texto-div">
+      <p class="texto">
+        <b>{{ fact.text }}</b>
+      </p>
+    </div>
+
+    <div class="img-div">
+      <img
+        *ngIf="imgLogic"
+        class="img"
+        src="https://picsum.photos/300"
+        alt="imagem aleatoria"
+      />
+      <div class="button-div">
+        <button (click)="showCatImg()" class="btn btn-primary">Imagem</button>
+        <button (click)="showCatGif()" class="btn btn-primary">GIF</button>
+      </div>
+    </div>
+  </div>
+</div>
